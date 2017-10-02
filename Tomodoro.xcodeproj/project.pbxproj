@@ -11,6 +11,8 @@
 		1CE494A21F7592EA00B4D74A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE494A11F7592EA00B4D74A /* ViewController.swift */; };
 		1CE494A41F7592EA00B4D74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE494A31F7592EA00B4D74A /* Assets.xcassets */; };
 		1CE494A71F7592EA00B4D74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE494A51F7592EA00B4D74A /* Main.storyboard */; };
+		1CE494BE1F75943400B4D74A /* PomodoroTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE494BD1F75943400B4D74A /* PomodoroTimerTests.swift */; };
+		1CE494C01F75943E00B4D74A /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE494BF1F75943E00B4D74A /* PomodoroTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		1CE494A91F7592EA00B4D74A /* Tomodoro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tomodoro.entitlements; sourceTree = "<group>"; };
 		1CE494AE1F7592EA00B4D74A /* TomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE494B41F7592EA00B4D74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE494BD1F75943400B4D74A /* PomodoroTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerTests.swift; sourceTree = "<group>"; };
+		1CE494BF1F75943E00B4D74A /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				1CE494A51F7592EA00B4D74A /* Main.storyboard */,
 				1CE494A81F7592EA00B4D74A /* Info.plist */,
 				1CE494A91F7592EA00B4D74A /* Tomodoro.entitlements */,
+				1CE494BF1F75943E00B4D74A /* PomodoroTimer.swift */,
 			);
 			path = Tomodoro;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		1CE494B11F7592EA00B4D74A /* TomodoroTests */ = {
 			isa = PBXGroup;
 			children = (
+				1CE494BD1F75943400B4D74A /* PomodoroTimerTests.swift */,
 				1CE494B41F7592EA00B4D74A /* Info.plist */,
 			);
 			path = TomodoroTests;
@@ -146,6 +152,7 @@
 					};
 					1CE494AD1F7592EA00B4D74A = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1CE4949B1F7592EA00B4D74A;
 					};
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE494C01F75943E00B4D74A /* PomodoroTimer.swift in Sources */,
 				1CE494A21F7592EA00B4D74A /* ViewController.swift in Sources */,
 				1CE494A01F7592EA00B4D74A /* AppDelegate.swift in Sources */,
 			);
@@ -203,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE494BE1F75943400B4D74A /* PomodoroTimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +380,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BES6937UL3;
@@ -378,6 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.TomodoroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tomodoro.app/Contents/MacOS/Tomodoro";
 			};
@@ -388,6 +399,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BES6937UL3;
